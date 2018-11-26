@@ -1,0 +1,203 @@
+@import "compass";
+
+$default-transition-duration:.3s;
+
+
+$icon-sprite-dimensions:true;
+$icon-layout:smart;
+@import "icon/*.png";
+
+@include global-reset;
+@include all-icon-sprites;
+
+*{@include box-sizing(border-box);}
+input, textarea{ border: none; -webkit-appearance: none; @include border-radius(0px); }
+
+/*------------------------------------*\
+    $GENERIC
+\*------------------------------------*/
+body{
+    color: #2f2e33;
+    font-family: "Ubuntu";
+    font-size: 16px;
+    background-color: #dadada;
+}
+i{display: inline-block;}
+h1{font-size: 28px; text-align: center; color: #fff; font-weight: bold; margin: 45px 0; display: none;}
+p{margin: 1em 0px; @include clearfix;}
+input.text{
+    display: block;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+    color: #e74a17;
+    font-size: 16px;
+    padding-left: 10px;
+    outline:none;
+    @include border-radius(4px);
+    @include background-clip(padding-box);
+    @include transition-duration;
+    &:focus{
+        border: 1px solid #11a7ab;
+    }
+}
+input.submit, .btn{
+    display: inline-block;
+    padding: 0 10px;
+    height: 50px; line-height: 50px;
+    border: none;
+    text-transform: uppercase; text-align: center;
+    font-size: 14px; color: #fff;
+    @include border-radius(4px);
+    @include background-clip(padding-box);
+    background-color: #2f2e33;
+    float: right;
+    text-decoration: none;
+}
+.btn{
+    background-color: #25737D;
+    float: left;
+}
+.back{
+    display: block;
+    position: absolute;
+    top: -60px; left: 0;
+    background:url(img/back.png) center center no-repeat;
+    z-index: 10;
+    width: 60px; height: 60px;
+}
+.loader{
+    @extend .panel;
+    background:url(img/loader.gif) center center no-repeat rgba(243, 232, 232, 0.60);
+    z-index: 500;
+}
+
+/*------------------------------------*\
+    $Elem
+\*------------------------------------*/
+.row-title{
+    height: 60px; line-height: 60px;
+    text-transform: uppercase;
+    background-color: #25737D;
+    @include border-radius(4px 4px 0 0);
+    @include background-clip(padding-box);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+.row{
+    height: 60px;
+    background-color: #b6b7b9;
+    margin: 1px 0;
+    position: relative;
+    i{
+        position: absolute;
+        left: 20px;
+        top: 5px;
+    }
+    .temperature{
+        color: #fff;
+        font-size: 18px;
+        position: absolute;
+        right: 20px;
+        line-height: 60px;
+    }
+    .humidity {
+        display:none;
+    }     
+    strong{ color: #fff; text-transform: uppercase; }
+    .date{
+        line-height: 60px;
+        font-size: 16px;
+        position: absolute;
+        left: 90px; top: 0;
+    }
+}
+.row_active{
+    margin: 0;
+    height: 133px;
+    background-color: rgba(37, 115, 125, 0.76);
+    color: #FFF!important;
+    .date{ position: absolute; top: 0; left: 25px; }
+    .temperature{
+        position: absolute;
+        top: 45px; left: 10px;
+        font-size: 65px; line-height: 65px;
+    }
+    .humidity {
+        display:block;
+        position: absolute;
+        top: 70px;
+        left: 215px;
+    }    
+    i{ position: absolute; top: 20px; right: 25px; left: auto; 
+        &.icon-clear {
+            background-position: 0 -174px;
+            background-size: 135%;
+        }
+        &.icon-rain {
+            background-position: 0 -115px;
+            background-size: 140%;
+        }
+        &.icon-clouds {
+            background-position: 5px 4px;
+            background-size: 160%;
+        }                     
+    }
+    i{@include icon-sprite(clouds-big);}
+}
+
+
+/*------------------------------------*\
+    $INTERFACE
+\*------------------------------------*/
+.header{
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 60px; line-height: 60px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #CF4E2E;
+}
+
+.view{
+    position: absolute;
+    top: 60px; right: 0; bottom: 60px; left: 0;
+}
+
+.nav{
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #2F2E33;
+    @include clearfix;
+    a{
+        display: block;
+        width: 50%;
+        height: 60px; line-height: 60px;
+        float: left;
+        @include transition-duration;
+    }
+    a:first-child{ border-right: 1px solid #dadada;}
+    .active{border-top: 3px solid #e74a17;}
+    i{margin-top: 15px;}
+}
+
+.panel{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling:touch;
+    @include transition-duration(.5s);
+}
+.panel-padding{ padding:0 25px; }
+
+.left{@include transform(translate3D(-100%, 0, 0));}
+.center{@include transform(translate3D(0, 0, 0));}
+.right{@include transform(translate3D(100%, 0, 0));}

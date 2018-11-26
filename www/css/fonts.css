@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'ubuntubold';
+    src: url('/fonts/ubuntu/ubuntu-bold-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu/ubuntu-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ubuntubold_italic';
+    src: url('/fonts/ubuntu/ubuntu-bolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu/ubuntu-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ubuntuitalic';
+    src: url('/fonts/ubuntu/ubuntu-italic-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu/ubuntu-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ubuntu_lightregular';
+    src: url('/fonts/ubuntu/ubuntu-light-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu/ubuntu-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ubuntu_lightitalic';
+    src: url('/fonts/ubuntu/ubuntu-lightitalic-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu/ubuntu-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ubuntu_mediumregular';
+    src: url('/fonts/ubuntu/ubuntu-medium-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu/ubuntu-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ubuntu_mediumitalic';
+    src: url('/fonts/ubuntu/ubuntu-mediumitalic-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu/ubuntu-mediumitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('/fonts/ubuntu/ubuntu-regular-webfont.woff2') format('woff2'),
+         url('/fonts/ubuntu/ubuntu-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('/fonts/Open_Sans/pensans-bold-webfont.woff2') format('woff2'),
+         url('/fonts/Open_Sans/pensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansbold_italic';
+    src: url('/fonts/Open_Sans/pensans-bolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/Open_Sans/pensans-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('/fonts/Open_Sans/pensans-extrabold-webfont.woff2') format('woff2'),
+         url('/fonts/Open_Sans/pensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansextrabold_italic';
+    src: url('/fonts/Open_Sans/pensans-extrabolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/Open_Sans/pensans-extrabolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansitalic';
+    src: url('/fonts/Open_Sans/pensans-italic-webfont.woff2') format('woff2'),
+         url('/fonts/Open_Sans/pensans-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('/fonts/Open_Sans/pensans-light-webfont.woff2') format('woff2'),
+         url('/fonts/Open_Sans/pensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanslight_italic';
+    src: url('/fonts/Open_Sans/pensans-lightitalic-webfont.woff2') format('woff2'),
+         url('/fonts/Open_Sans/pensans-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('/fonts/Open_Sans/pensans-regular-webfont.woff2') format('woff2'),
+         url('/fonts/Open_Sans/pensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('/fonts/Open_Sans/pensans-semibold-webfont.woff2') format('woff2'),
+         url('/fonts/Open_Sans/pensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanssemibold_italic';
+    src: url('/fonts/Open_Sans/pensans-semibolditalic-webfont.woff2') format('woff2'),
+         url('/fonts/Open_Sans/pensans-semibolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
